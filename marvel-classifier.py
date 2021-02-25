@@ -56,8 +56,3 @@ def form(request):
 @app.route("/form")
 def redirect_to_homepage(request):
     return RedirectResponse("/")
-
-
-if __name__ == "__main__":
-    if "serve" in sys.argv:
-        uvicorn.run(app, host="0.0.0.0", port=8008)

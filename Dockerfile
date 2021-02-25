@@ -8,6 +8,6 @@ RUN pip install -r requirements.txt
 
 RUN python marvel-classifier.py
 
-EXPOSE 8008
+# EXPOSE 8008
 
-CMD ["python", "marvel-classifier.py", "serve"]
+CMD uvicorn marvel-classifier:app --host 0.0.0.0 --port $PORT
