@@ -1,1 +1,4 @@
 **/.vscode
+Dockerfile
+README.md
+*.ipynb
